@@ -52,7 +52,7 @@ def path_strip(path, root):
     path = os.path.normcase(path)
     root = os.path.normcase(root)
     if path.startswith(root):
-        return path[len(root):]
+        return path[len(root)+1:]
     return path
 
 
